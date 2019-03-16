@@ -1,5 +1,6 @@
 import { auth, usersRef } from './firebase.js';
 
+
 const ui = new firebaseui.auth.AuthUI(auth);
 ui.start('#login', {
     signInOptions: [
