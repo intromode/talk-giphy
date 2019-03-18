@@ -1,3 +1,5 @@
+import { writeToQuery } from './hash-component.js';
+
 const inputForm = document.getElementById('input-form');
 
 export default function getMessage() {
@@ -5,6 +7,9 @@ export default function getMessage() {
         event.preventDefault();
         const input = inputForm.querySelector('input');
         const message = input.value;
-        return message;
+        const currentQuery = window.location.hash.slice(1);
+        const newQuery = writeToQuery(currentQuery, message);
+        window.location.hash = newQuery;
+        // callback(message);
     });
 }

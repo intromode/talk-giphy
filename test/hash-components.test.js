@@ -1,22 +1,7 @@
+import { writeToQuery, readMessageFromQuery } from '../src/hash-component.js';
 const test = QUnit.test;
 
-
 QUnit.module('HASH COMPONENTS');
-
-function writeToQuery(currentQuery, message) {
-    const searchParams = new URLSearchParams(currentQuery);
-    searchParams.set('q', message);
-    return searchParams.toString();
-}
-
-function readMessageFromQuery(currentQuery) {
-    const searchParams = new URLSearchParams(currentQuery);
-    const message = searchParams.get('q');
-    const queryValues = {
-        message: message
-    };
-    return queryValues;
-}
 
 test('write to query', assert => {
     //arrange
