@@ -5,3 +5,12 @@ export function makeGifTemplate(gif) {
     template.innerHTML = html;
     return template.content;
 }
+
+const displayGifs = document.getElementById('gif-display');
+
+export default function loadGifs(gifs){
+    gifs.data.forEach(gif => {
+        const gifItem = makeGifTemplate(gif);
+        displayGifs.appendChild(gifItem);
+    });
+}
