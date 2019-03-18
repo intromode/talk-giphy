@@ -9,8 +9,15 @@ export function makeGifTemplate(gif) {
 const displayGifs = document.getElementById('gif-display');
 
 export default function loadGifs(gifs){
-    gifs.data.forEach(gif => {
-        const gifItem = makeGifTemplate(gif);
-        displayGifs.appendChild(gifItem);
-    });
+    // while(displayGifs.children.length > 0) {
+    //     displayGifs.lastElementChild.remove();
+    // }
+
+    const gif = gifs.data[0];
+    const gifDisplay = makeGifTemplate(gif);
+    displayGifs.appendChild(gifDisplay);
+    // gifs.data.forEach(gif => {    
+    //     const gifItem = makeGifTemplate(gif);
+    //     displayGifs.appendChild(gifItem);
+    // });
 }
