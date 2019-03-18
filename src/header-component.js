@@ -24,15 +24,20 @@ export function makeProfileHeader(user) {
 const headerNode = document.getElementById('header-container');
 // const userProfileHeaderNode = document.getElementById('user-profile');
 
-export default function loadHeader() {
+export default function loadHeader(options) {
     const staticHeader = makeStaticHeader();
     headerNode.appendChild(staticHeader);
+    if(options && options.skipAuth) {
+        return;
+    }
     //get current user id
     auth.onAuthStateChanged(user => {
         const userID = user.uid;
         if(userID) {
-            console.log('userid exists');
+            const profile = makeProfileHeader(user);
+            headerNode.appendChild(profile);
         } else {
+            window.location = 'auth.html';
             console.log('user does not exist');
         }
     });

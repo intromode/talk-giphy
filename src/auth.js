@@ -1,5 +1,11 @@
 import { auth, usersRef } from './firebase.js';
+import loadHeader from './header-component.js';
 
+const options = {
+    skipAuth: true
+};
+
+loadHeader(options);
 
 const ui = new firebaseui.auth.AuthUI(auth);
 ui.start('#login', {
