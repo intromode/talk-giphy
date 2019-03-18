@@ -2,15 +2,29 @@ export const results = {
     data: [
         {
             id: 'FP2OpdSFCR7hK',
-            url: 'https://giphy.com/gifs/kitten-cute-adorable-FP2OpdSFCR7hK',
-        },
-        {
-            id: 'wHc92cHADhpLi',
-            url: 'https://giphy.com/gifs/kitten-cat-wHc92cHADhpLi',
+            images: {
+                fixed_width: { 
+                    url: 'https://media3.giphy.com/media/bbshzgyFQDqPHXBo4c/200w.gif',
+                }
+            }
+
         },
         {
             id: 'FP2OpdSFCR7hK',
-            url: 'https://giphy.com/gifs/kitten-cute-adorable-FP2OpdSFCR7hK',
+            images: {
+                fixed_width: { 
+                    url: 'https://media3.giphy.com/media/bbshzgyFQDqPHXBo4c/200w.gif',
+                }
+            }
+
+        },
+        {
+            id: 'FP2OpdSFCR7hK',
+            images: {
+                fixed_width: { 
+                    url: 'https://media3.giphy.com/media/bbshzgyFQDqPHXBo4c/200w.gif',
+                }
+            }
         }
     ]
 };
