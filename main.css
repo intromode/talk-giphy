@@ -3,7 +3,7 @@ body {
     margin: 0px;
 }
 
-header {
+#header-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -12,12 +12,13 @@ header {
     height: 100px;
 }
 
-header img {
-    height: 80px;
+#static-header {
+    display: flex;
+    flex-grow: 1;
 }
 
-header h1 {
-    flex-grow: 1;
+header img {
+    height: 80px;
 }
 
 #user-profile {

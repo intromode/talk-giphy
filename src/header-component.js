@@ -22,7 +22,6 @@ export function makeProfileHeader(user) {
     return template.content;
 }
 const headerNode = document.getElementById('header-container');
-// const userProfileHeaderNode = document.getElementById('user-profile');
 
 export default function loadHeader(options) {
     const staticHeader = makeStaticHeader();
@@ -30,18 +29,17 @@ export default function loadHeader(options) {
     if(options && options.skipAuth) {
         return;
     }
-    //get current user id
     auth.onAuthStateChanged(user => {
-        const userID = user.uid;
-        if(userID) {
+        if(user) {
             const profile = makeProfileHeader(user);
+            const signOutButton = profile.querySelector('button');
+            signOutButton.addEventListener('click', () => {
+                auth.signOut();
+                window.location.hash = '';
+            });
             headerNode.appendChild(profile);
         } else {
             window.location = 'auth.html';
-            console.log('user does not exist');
         }
     });
-    //if current user id exist then load profile
-
-    //if current user id doesn't exist exist function and reroute to auth page
 }
