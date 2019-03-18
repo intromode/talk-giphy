@@ -1,14 +1,7 @@
+import { makeGifTemplate } from '../src/display-giphy-component.js';
 const test = QUnit.test;
 
 QUnit.module('DISPLAY-GIPHY-TEMPLATE');
-
-function makeGifTemplate(gif) {
-    const html = `<img src="${gif.images.fixed_width.url}" alt="${gif.title}">`;
-
-    const template = document.createElement('template');
-    template.innerHTML = html;
-    return template.content;
-}
 
 test('make giphy list with template', assert => {
     const gif = {
