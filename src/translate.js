@@ -16,31 +16,49 @@ window.addEventListener('hashchange', () => {
     const queryValues = readMessageFromQuery(currentQuery);
     const splitMessage = queryValues.message.split(' ');
     console.log('split message', splitMessage);
-    splitMessage.forEach(message => {
-        const url = makeApiURL(message);
+    const numberMessages = splitMessage.length;
+    console.log('number of messages', numberMessages);
+
+    const responseArray = [];
+
+
+    for(let i = 0; i < numberMessages; i++) {
+       
+        console.log('split message', splitMessage[i]);
+        const url = makeApiURL(splitMessage[i]);
         fetch(url)
             .then(response => response.json())
-            .then(results => {
-                console.log(message, results);
-                loadGifs(results);
+            .then(result => {
+              
+                result['order'] = i;
+                responseArray.push(result);
+                console.log('responseArray', responseArray);
+
             });
+           
+    }
 
-    });
-    
-// renderarray = []
-// gif 1 = const url1 = makeapiurl(splitmessage[0])
-    // fetch(url1) blah blah blah 
 
-    //gif 2
-    //gif 3
 
-    //loadgifs(renderarray)
-    
+
+
+
+    //splitMessage.forEach(message => {
+    //  const url = makeApiURL(message);
+    //fetch(url)
+    //  .then(response => response.json())
+    //.then(results => {
+    //  console.log('**message**', message, '**results**', results);
+    //loadGifs(results);
+    //});
+
+    //});
+
+
 
 
 });
 
-//writToQuery(currentQuery, message)
 
 
 

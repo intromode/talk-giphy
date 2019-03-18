@@ -12,7 +12,7 @@ export default function loadGifs(gifs){
     // while(displayGifs.children.length > 0) {
     //     displayGifs.lastElementChild.remove();
     // }
-
+    console.log('gifs', gifs);
     const gif = gifs.data[0];
     const gifDisplay = makeGifTemplate(gif);
     displayGifs.appendChild(gifDisplay);
