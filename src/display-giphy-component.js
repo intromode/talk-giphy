@@ -34,9 +34,13 @@ export default function loadGifs(gifs){
                 let isFavorite = false;
                 if(value) {
                     isFavorite = true;
+                    favoriteGif.textContent = '★ Gif Favorited';
+                    favoriteGif.classList.add('fave');
                 }
                 else {
                     isFavorite = false;
+                    favoriteGif.textContent = '☆ Add to Favorites';
+                    favoriteGif.classList.remove('fave');
                 }
 
                 favoriteGif.addEventListener('click', () => {
