@@ -10,6 +10,3 @@
 1. Giphy Chat: Using Firebase Messaging, the user can write a message to another logged in user and have their message be displayed to that user as a list of gifs (see 1). 
 2. The user can choose to search or display Giphy gifs or stickers.
 3. App-wide use of CSS transition effects/animations.
-
-
-
