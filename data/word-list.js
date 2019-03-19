@@ -1,0 +1,790 @@
+export const words = [
+    {
+        '': '69 683',
+        'word': 'time'
+    },
+    {
+        '': '58 762',
+        'word': 'year'
+    },
+    {
+        '': '58 218',
+        'word': 'people'
+    },
+    {
+        '': '41 922',
+        'word': 'way'
+    },
+    {
+        '': '36 752',
+        'word': 'day'
+    },
+    {
+        '': '32 595',
+        'word': 'thing'
+    },
+    {
+        '': '30 241',
+        'word': 'information'
+    },
+    {
+        '': '27 374',
+        'word': 'work'
+    },
+    {
+        '': '27 156',
+        'word': 'business'
+    },
+    {
+        '': '26 074',
+        'word': 'service'
+    },
+    {
+        '': '25 561',
+        'word': 'life'
+    },
+    {
+        '': '25 409',
+        'word': 'company'
+    },
+    {
+        '': '25 073',
+        'word': 'site'
+    },
+    {
+        '': '23 559',
+        'word': 'world'
+    },
+    {
+        '': '23 460',
+        'word': 'part'
+    },
+    {
+        '': '22 601',
+        'word': 'system'
+    },
+    {
+        '': '22 039',
+        'word': 'student'
+    },
+    {
+        '': '21 266',
+        'word': 'child'
+    },
+    {
+        '': '20 601',
+        'word': 'program'
+    },
+    {
+        '': '19 631',
+        'word': 'number'
+    },
+    {
+        '': '18 430',
+        'word': 'place'
+    },
+    {
+        '': '18 222',
+        'word': 'lot'
+    },
+    {
+        '': '18 207',
+        'word': 'week'
+    },
+    {
+        '': '18 056',
+        'word': 'something'
+    },
+    {
+        '': '17 806',
+        'word': 'family'
+    },
+    {
+        '': '17 800',
+        'word': 'page'
+    },
+    {
+        '': '17 589',
+        'word': 'home'
+    },
+    {
+        '': '17 354',
+        'word': 'book'
+    },
+    {
+        '': '17 187',
+        'word': 'case'
+    },
+    {
+        '': '17 178',
+        'word': 'group'
+    },
+    {
+        '': '17 171',
+        'word': 'problem'
+    },
+    {
+        '': '17 131',
+        'word': 'product'
+    },
+    {
+        '': '17 117',
+        'word': 'school'
+    },
+    {
+        '': '17 028',
+        'word': 'community'
+    },
+    {
+        '': '16 872',
+        'word': 'area'
+    },
+    {
+        '': '16 809',
+        'word': 'member'
+    },
+    {
+        '': '16 615',
+        'word': 'website'
+    },
+    {
+        '': '16 540',
+        'word': 'experience'
+    },
+    {
+        '': '16 379',
+        'word': 'issue'
+    },
+    {
+        '': '16 358',
+        'word': 'project'
+    },
+    {
+        '': '16 107',
+        'word': 'state'
+    },
+    {
+        '': '15 694',
+        'word': 'user'
+    },
+    {
+        '': '15 578',
+        'word': 'month'
+    },
+    {
+        '': '15 570',
+        'word': 'question'
+    },
+    {
+        '': '15 318',
+        'word': 'woman'
+    },
+    {
+        '': '15 290',
+        'word': 'point'
+    },
+    {
+        '': '15 195',
+        'word': 'game'
+    },
+    {
+        '': '15 146',
+        'word': 'course'
+    },
+    {
+        '': '15 061',
+        'word': 'country'
+    },
+    {
+        '': '15 039',
+        'word': 'government'
+    },
+    {
+        '': '14 949',
+        'word': 'idea'
+    },
+    {
+        '': '14 931',
+        'word': 'event'
+    },
+    {
+        '': '14 872',
+        'word': 'process'
+    },
+    {
+        '': '14 660',
+        'word': 'name'
+    },
+    {
+        '': '14 547',
+        'word': 'use'
+    },
+    {
+        '': '14 518',
+        'word': 'result'
+    },
+    {
+        '': '14 365',
+        'word': 'man'
+    },
+    {
+        '': '14 294',
+        'word': 'example'
+    },
+    {
+        '': '14 152',
+        'word': 'money'
+    },
+    {
+        '': '14 055',
+        'word': 'datum'
+    },
+    {
+        '': '14 051',
+        'word': 'change'
+    },
+    {
+        '': '14 032',
+        'word': 'today'
+    },
+    {
+        '': '13 897',
+        'word': 'research'
+    },
+    {
+        '': '13 860',
+        'word': 'job'
+    },
+    {
+        '': '13 831',
+        'word': 'New'
+    },
+    {
+        '': '13 697',
+        'word': 'customer'
+    },
+    {
+        '': '13 661',
+        'word': 'post'
+    },
+    {
+        '': '13 640',
+        'word': 'team'
+    },
+    {
+        '': '13 344',
+        'word': 'right'
+    },
+    {
+        '': '13 199',
+        'word': 'level'
+    },
+    {
+        '': '12 695',
+        'word': 'friend'
+    },
+    {
+        '': '12 554',
+        'word': 'blog'
+    },
+    {
+        '': '12 543',
+        'word': 'order'
+    },
+    {
+        '': '12 525',
+        'word': 'person'
+    },
+    {
+        '': '12 476',
+        'word': 'fact'
+    },
+    {
+        '': '12 237',
+        'word': 'term'
+    },
+    {
+        '': '12 091',
+        'word': 'health'
+    },
+    {
+        '': '11 762',
+        'word': 'content'
+    },
+    {
+        '': '11 755',
+        'word': 'law'
+    },
+    {
+        '': '11 649',
+        'word': 'type'
+    },
+    {
+        '': '11 618',
+        'word': 'market'
+    },
+    {
+        '': '11 571',
+        'word': 'other'
+    },
+    {
+        '': '11 497',
+        'word': 'end'
+    },
+    {
+        '': '11 428',
+        'word': 'Google'
+    },
+    {
+        '': '11 411',
+        'word': 'word'
+    },
+    {
+        '': '11 370',
+        'word': 'policy'
+    },
+    {
+        '': '11 360',
+        'word': 'development'
+    },
+    {
+        '': '11 279',
+        'word': 'value'
+    },
+    {
+        '': '11 266',
+        'word': 'university'
+    },
+    {
+        '': '11 252',
+        'word': 'food'
+    },
+    {
+        '': '11 238',
+        'word': 'medium'
+    },
+    {
+        '': '11 159',
+        'word': 'article'
+    },
+    {
+        '': '11 138',
+        'word': 'power'
+    },
+    {
+        '': '11 041',
+        'word': 'hour'
+    },
+    {
+        '': '10 855',
+        'word': 'support'
+    },
+    {
+        '': '10 835',
+        'word': 'line'
+    },
+    {
+        '': '10 823',
+        'word': 'technology'
+    },
+    {
+        '': '10 721',
+        'word': 'need'
+    },
+    {
+        '': '10 697',
+        'word': 'list'
+    },
+    {
+        '': '10 686',
+        'word': 'search'
+    },
+    {
+        '': '10 651',
+        'word': 'opportunity'
+    },
+    {
+        '': '10 590',
+        'word': 'cost'
+    },
+    {
+        '': '10 587',
+        'word': 'water'
+    },
+    {
+        '': '10 531',
+        'word': 'link'
+    },
+    {
+        '': '10 438',
+        'word': 'form'
+    },
+    {
+        '': '10 326',
+        'word': 'reason'
+    },
+    {
+        '': '10 136',
+        'word': 'study'
+    },
+    {
+        '': '9 991',
+        'word': 'application'
+    },
+    {
+        '': '9 986',
+        'word': 'report'
+    },
+    {
+        '': '9 965',
+        'word': 'tool'
+    },
+    {
+        '': '9 931',
+        'word': 'hand'
+    },
+    {
+        '': '9 907',
+        'word': 'activity'
+    },
+    {
+        '': '9 874',
+        'word': 'design'
+    },
+    {
+        '': '9 837',
+        'word': 'interest'
+    },
+    {
+        '': '9 794',
+        'word': 'plan'
+    },
+    {
+        '': '9 661',
+        'word': 'action'
+    },
+    {
+        '': '9 593',
+        'word': 'history'
+    },
+    {
+        '': '9 508',
+        'word': 'industry'
+    },
+    {
+        '': '9 368',
+        'word': 'organization'
+    },
+    {
+        '': '9 352',
+        'word': 'bit'
+    },
+    {
+        '': '9 351',
+        'word': 'option'
+    },
+    {
+        '': '9 313',
+        'word': 'client'
+    },
+    {
+        '': '9 312',
+        'word': 'story'
+    },
+    {
+        '': '9 147',
+        'word': 'someone'
+    },
+    {
+        '': '9 123',
+        'word': 'class'
+    },
+    {
+        '': '9 055',
+        'word': 'price'
+    },
+    {
+        '': '9 019',
+        'word': 'side'
+    },
+    {
+        '': '8 993',
+        'word': 'kind'
+    },
+    {
+        '': '8 986',
+        'word': 'rate'
+    },
+    {
+        '': '8 863',
+        'word': 'source'
+    },
+    {
+        '': '8 838',
+        'word': 'quality'
+    },
+    {
+        '': '8 827',
+        'word': 'web'
+    },
+    {
+        '': '8 810',
+        'word': 'education'
+    },
+    {
+        '': '8 769',
+        'word': 'practice'
+    },
+    {
+        '': '8 760',
+        'word': 'comment'
+    },
+    {
+        '': '8 732',
+        'word': 'city'
+    },
+    {
+        '': '8 662',
+        'word': 'care'
+    },
+    {
+        '': '8 636',
+        'word': 'car'
+    },
+    {
+        '': '8 468',
+        'word': 'party'
+    },
+    {
+        '': '8 368',
+        'word': 'file'
+    },
+    {
+        '': '8 365',
+        'word': 'image'
+    },
+    {
+        '': '8 347',
+        'word': 'marketing'
+    },
+    {
+        '': '8 344',
+        'word': 'body'
+    },
+    {
+        '': '8 291',
+        'word': 'Internet'
+    },
+    {
+        '': '8 281',
+        'word': 'benefit'
+    },
+    {
+        '': '8 272',
+        'word': 'resource'
+    },
+    {
+        '': '8 105',
+        'word': 'effort'
+    },
+    {
+        '': '8 098',
+        'word': 'email'
+    },
+    {
+        '': '8 040',
+        'word': 'card'
+    },
+    {
+        '': '8 005',
+        'word': 'sale'
+    },
+    {
+        '': '7 912',
+        'word': 'video'
+    },
+    {
+        '': '7 900',
+        'word': 'room'
+    },
+    {
+        '': '7 880',
+        'word': 'access'
+    },
+    {
+        '': '7 866',
+        'word': 'solution'
+    },
+    {
+        '': '7 863',
+        'word': 'step'
+    },
+    {
+        '': '7 796',
+        'word': 'anything'
+    },
+    {
+        '': '7 791',
+        'word': 'minute'
+    },
+    {
+        '': '7 752',
+        'word': 'account'
+    },
+    {
+        '': '7 745',
+        'word': 'decision'
+    },
+    {
+        '': '7 670',
+        'word': 'network'
+    },
+    {
+        '': '7 660',
+        'word': 'house'
+    },
+    {
+        '': '7 637',
+        'word': 'view'
+    },
+    {
+        '': '7 627',
+        'word': 'version'
+    },
+    {
+        '': '7 606',
+        'word': 'everything'
+    },
+    {
+        '': '7 604',
+        'word': 'amount'
+    },
+    {
+        '': '7 599',
+        'word': 'management'
+    },
+    {
+        '': '7 560',
+        'word': 'night'
+    },
+    {
+        '': '7 556',
+        'word': 'model'
+    },
+    {
+        '': '7 513',
+        'word': 'space'
+    },
+    {
+        '': '7 505',
+        'word': 'goal'
+    },
+    {
+        '': '7 490',
+        'word': 'feature'
+    },
+    {
+        '': '7 490',
+        'word': 'effect'
+    },
+    {
+        '': '7 457',
+        'word': 'role'
+    },
+    {
+        '': '7 441',
+        'word': 'field'
+    },
+    {
+        '': '7 410',
+        'word': 'material'
+    },
+    {
+        '': '7 355',
+        'word': 'credit'
+    },
+    {
+        '': '7 296',
+        'word': 'everyone'
+    },
+    {
+        '': '7 266',
+        'word': 'software'
+    },
+    {
+        '': '7 258',
+        'word': 'training'
+    },
+    {
+        '': '7 214',
+        'word': 'office'
+    },
+    {
+        '': '7 185',
+        'word': 'mind'
+    },
+    {
+        '': '7 124',
+        'word': 'National'
+    },
+    {
+        '': '7 117',
+        'word': 'age'
+    },
+    {
+        '': '7 054',
+        'word': 'news'
+    },
+    {
+        '': '7 022',
+        'word': 'phone'
+    },
+    {
+        '': '7 009',
+        'word': 'York'
+    },
+    {
+        '': '6 999',
+        'word': 'skill'
+    },
+    {
+        '': '6 977',
+        'word': 'parent'
+    },
+    {
+        '': '6 949',
+        'word': 'individual'
+    },
+    {
+        '': '6 943',
+        'word': 'relationship'
+    },
+    {
+        '': '6 893',
+        'word': 'control'
+    },
+    {
+        '': '6 889',
+        'word': 'computer'
+    },
+    {
+        '': '6 881',
+        'word': 'risk'
+    },
+    {
+        '': '6 880',
+        'word': 'employee'
+    },
+    {
+        '': '6 874',
+        'word': 'show'
+    },
+    {
+        '': '6 874',
+        'word': 'music'
+    },
+    {
+        '': '6 863',
+        'word': 'energy'
+    }
+];
