@@ -15,6 +15,7 @@ window.addEventListener('hashchange', () => {
     const numberMessages = splitMessage.length;
     const responseArray = [];
 
+
     for(let i = 0; i < numberMessages; i++) {
         const url = makeApiURL(splitMessage[i]);
         fetch(url)
@@ -26,6 +27,7 @@ window.addEventListener('hashchange', () => {
                 responseArray.sort((a, b) => a.order - b.order);  
             });    
     }
+
     function loadGifsList() {
         loadGifs(responseArray);
     }

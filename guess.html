@@ -7,7 +7,23 @@
     <title>Guess</title>
 </head>
 <body>
-    <section id="gif-display"></section>
+    <header id="header"></header>
+    <main>
+        <section id="generate-display">
+            <button id="generate-gif">Generate</button>
+        </section>
+        <section id="gif-display"></section>
+        <section id="guess-display">
+            <form id="guess-form">
+                <label>
+                    What's your guess?
+                    <input type="text" name="guess-input" id="guess-input" placeholder="Enter guess here">
+                </label>
+                <button>Submit</button>
+            </form>
+        </section>
+        <section id="game-outcome-display"></section>
+    </main>
     <script type="module" src="src/guess.js"></script>
 </body>
 </html>
