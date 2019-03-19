@@ -6,9 +6,6 @@ import makeApiURL from './make-api-url-component.js';
 
 
 loadHeader();
-// loadGifs(results);
-
-
 
 updateQuery();
 window.addEventListener('hashchange', () => {

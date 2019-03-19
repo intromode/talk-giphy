@@ -9,7 +9,9 @@ export function makeGifTemplate(gif) {
 const displayGifs = document.getElementById('gif-display');
 
 export default function loadGifs(gifs){
-    console.log('load gifs called', gifs);
+    while(displayGifs.children.length > 0) {
+        displayGifs.lastElementChild.remove();
+    }
     gifs.forEach(gif => {
         const gifDisplay = makeGifTemplate(gif);
         displayGifs.appendChild(gifDisplay);
