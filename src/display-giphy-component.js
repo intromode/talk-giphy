@@ -46,6 +46,7 @@ export default function loadGifs(gifs){
                     if(isFavorite) {
                         isFavorite = false;
                         userFavoriteGifRef.remove();
+                        favoriteGif.textContent = '☆ Add to Favorites';
                     }
                     else {
                         isFavorite = true;
@@ -53,6 +54,7 @@ export default function loadGifs(gifs){
                             id: gif.id,
                             url: gif.images.fixed_width.url
                         });    
+                        favoriteGif.textContent = '★ Gif Favorited';
                     }
                 });
         
