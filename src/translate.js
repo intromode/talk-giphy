@@ -4,7 +4,6 @@ import { readMessageFromQuery } from './hash-component.js';
 import updateQuery from './update-query-component.js';
 import makeApiURL from './make-api-url-component.js';
 
-
 loadHeader();
 
 updateQuery();

@@ -14,7 +14,7 @@ test('make giphy list with template', assert => {
         title: 'dumb dog GIF'
     };
 //Arrange
-    const expected = '<img src="https://media3.giphy.com/media/bbshzgyFQDqPHXBo4c/200w.gif" alt="dumb dog GIF">';
+    const expected = '<li><img src="https://media3.giphy.com/media/bbshzgyFQDqPHXBo4c/200w.gif" alt="dumb dog GIF"><span class="favorite-gif">☆ Add to Favorites</span></li>';
 //Act
     const result = makeGifTemplate(gif);
 //Assert

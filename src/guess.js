@@ -24,6 +24,7 @@ generateGifButton.addEventListener('click', () => {
         ).then(
             result => {
                 originalData = result.data;
+                console.log(originalData);
                 loadGifs(originalData.slice(0, 1));
             });    
 });
