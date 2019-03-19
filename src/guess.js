@@ -1,27 +1,57 @@
 import { words } from '../data/word-list.js';
 import makeApiURL from './make-api-url-component.js';
+import loadGifs from './display-giphy-component.js';
+
+const GUESS_LIMIT = 3;
+let guessCount = 0;
 
 const generateGifButton = document.getElementById('generate-gif');
+const guessForm = document.getElementById('guess-form');
+const gameOutcomeDisplay = document.getElementById('game-outcome-display');
+let originalData = [];
+let randomWord = '';
 
 generateGifButton.addEventListener('click', () => {
+    while(gameOutcomeDisplay.children.length > 0) {
+        gameOutcomeDisplay.lastElementChild.remove();
+    }
     const randomWordObject = words[Math.floor(Math.random() * words.length)];
-    const randomWord = randomWordObject.word;
+    randomWord = randomWordObject.word;
     const url = makeApiURL(randomWord);
-    console.log('page js url', url);
-    // fetch(url)
+    fetch(url)
+        .then(
+            response => response.json()
+        ).then(
+            result => {
+                originalData = result.data;
+                loadGifs(originalData.slice(0, 1));
+            });    
+});
+        
+        
+guessForm.addEventListener('submit', event => {
+    event.preventDefault();
+    const formData = new FormData(guessForm);
+    const guess = formData.get('guess-input');
+    guessCount++;
+        
+    if(guess === randomWord) {
+        guessCount = 0;
+        const winMessage = document.createElement('p');
+        winMessage.textContent = `Congrats, you win! The correct word is ${randomWord}.`;
+        gameOutcomeDisplay.appendChild(winMessage);
 
-
-    //create generate button (generate button should reset entire game if a game exists)
-    
-    //on generate button click get random word, then call API with random word
-    
-    //take results and display first
+    } if(guessCount === GUESS_LIMIT) {
+        const loseMessage = document.createElement('p');
+        loseMessage.textContent = `Sorry, you lose. The correct word is ${randomWord}.`;
+        gameOutcomeDisplay.appendChild(loseMessage);
+        guessCount = 0;
+    }
+    else {
+        const slicedData = originalData.slice(0, (guessCount + 1));
+        loadGifs(slicedData);
+    }
+               
 });
 
 
-//write user guess area
-
-//on click of user guess button, guess string is evaluated against random word
-    // if randomWord === guess --> win message
-    // if randomWord !== guess --> add one more gif to display
-    // if gif display === 3 --> lose message
