@@ -47,7 +47,9 @@ export default function loadGifs(gifs){
                         isFavorite = false;
                         userFavoriteGifRef.remove();
                         favoriteGif.textContent = '☆ Add to Favorites';
+                        favoriteGif.classList.remove('fave');
                     }
+
                     else {
                         isFavorite = true;
                         userFavoriteGifRef.set({
@@ -55,6 +57,7 @@ export default function loadGifs(gifs){
                             url: gif.images.fixed_width.url
                         });    
                         favoriteGif.textContent = '★ Gif Favorited';
+                        favoriteGif.classList.add('fave');
                     }
                 });
         

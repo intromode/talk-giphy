@@ -5,6 +5,7 @@ import './display-giphy-template.test.js';
 import './hash-components.test.js';
 import './make-api-url.test.js';
 import './handle-guess.test.js';
+import './object-to-array.test.js';
 
 QUnit.done(() => {
     app.delete();
