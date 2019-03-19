@@ -1,10 +1,7 @@
+import objectToArray from '../src/object-to-array.js';
 const test = QUnit.test;
 
 QUnit.module('OBJECT TO ARRAY');
-function objectToArray(input) {
-    const keys = Object.keys(input);
-    return keys.map(key => input[key]);
-}
 
 test('turning the gif object into an array', assert => {
     //Arrange

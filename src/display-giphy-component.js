@@ -21,9 +21,9 @@ export default function loadGifs(gifs){
     }
 
     gifs.forEach(gif => {
+        console.log(gif);
         const gifDisplay = makeGifTemplate(gif);
         const favoriteGif = gifDisplay.querySelector('span');
-        console.log(auth);
         const userId = auth.currentUser.uid;
         const userFavoritesRef = favoritesByUserRef.child(userId);
         const userFavoriteGifRef = userFavoritesRef.child(gif.id);
@@ -39,9 +39,6 @@ export default function loadGifs(gifs){
                     isFavorite = false;
                 }
 
-                //is its a favorite, remove the favorite 
-                //if its not already a fave, add the fav
-                //addeventlistener 
                 favoriteGif.addEventListener('click', () => {
                     if(isFavorite) {
                         isFavorite = false;
@@ -54,7 +51,11 @@ export default function loadGifs(gifs){
                         isFavorite = true;
                         userFavoriteGifRef.set({
                             id: gif.id,
-                            url: gif.images.fixed_width.url
+                            images: {
+                                fixed_width: {
+                                    url:gif.images.fixed_width.url
+                                }
+                            } 
                         });    
                         favoriteGif.textContent = '★ Gif Favorited';
                         favoriteGif.classList.add('fave');

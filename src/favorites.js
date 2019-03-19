@@ -1,6 +1,7 @@
 import loadHeader from './header-component.js';
 import { auth, favoritesByUserRef } from './firebase.js';
 import loadGifs from './display-giphy-component.js';
+import objectToArray from './object-to-array.js';
 
 loadHeader();
 
@@ -14,8 +15,8 @@ auth.onAuthStateChanged(user => {
     userFavoritesRef.once('value')
         .then(snapshot => {
             const value = snapshot.val();
-            console.log(value);
-            loadGifs(value);
+            const gifs = objectToArray(value);
+            loadGifs(gifs);
         });
 
 });
