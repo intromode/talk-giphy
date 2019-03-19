@@ -17,18 +17,23 @@ window.addEventListener('hashchange', () => {
     const splitMessage = queryValues.message.split(' ');
     const numberMessages = splitMessage.length;
     const responseArray = [];
-    
+
     for(let i = 0; i < numberMessages; i++) {
         const url = makeApiURL(splitMessage[i]);
         fetch(url)
             .then(response => response.json())
             .then(result => {
-                result['order'] = i;
-                responseArray.push(result);
-                responseArray.sort((a, b) => a.order - b.order);
-                        
+                const firstGifInResults = result.data[0];
+                firstGifInResults['order'] = i;
+                responseArray.push(firstGifInResults);
+                responseArray.sort((a, b) => a.order - b.order);  
             });    
     }
+    function loadGifsList() {
+        loadGifs(responseArray);
+    }
+    setTimeout(loadGifsList, 500);
+    
 });
 
 
