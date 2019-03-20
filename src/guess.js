@@ -2,8 +2,10 @@ import { words } from '../data/word-list.js';
 import makeApiURL from './make-api-url-component.js';
 import loadGifs from './display-giphy-component.js';
 import loadHeader from './header-component.js';
+import loadFooter from './footer-component.js';
 
 loadHeader();
+loadFooter();
 
 const GUESS_LIMIT = 3;
 let guessCount = 0;

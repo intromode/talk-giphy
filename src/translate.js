@@ -3,9 +3,10 @@ import loadHeader from './header-component.js';
 import { readMessageFromQuery } from './hash-component.js';
 import updateQuery from './update-query-component.js';
 import makeApiURL from './make-api-url-component.js';
+import loadFooter from './footer-component.js';
 
 loadHeader();
-
+loadFooter();
 updateQuery();
 window.addEventListener('hashchange', () => {
     const currentQuery = window.location.hash.slice(1);
