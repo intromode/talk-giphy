@@ -2,3 +2,11 @@ body {
     padding: 0px;
     margin: 0px;
 }
+
+#container {
+    min-height: calc(100vh - 70px);
+    /* padding: 40px 40px 0 40px; */
+  }
+ #footer-container {
+    height: 50px;
+  }

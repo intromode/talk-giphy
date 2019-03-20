@@ -1,0 +1,45 @@
+html { 
+    background: url(../assets/auth-background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /* main {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+  } */
+
+  #login {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 5px;
+      width: 100%;
+      height: 100px;
+      background-color: white;
+  }
+
+  #login p {
+    font-family: Loew-Heavy;
+    font-size: 28px;
+    text-transform: uppercase;
+    background: white;
+  }
+
+  .firebaseui-container.firebaseui-page-provider-sign-in.firebaseui-id-page-provider-sign-in.firebaseui-use-spinner {
+      display: flex;
+      justify-content: flex-start;
+  }
+
+  .firebaseui-idp-list {
+      display: flex;
+      justify-content: flex-start;
+  }
+
+  .firebaseui-idp-button.mdl-button.mdl-js-button.mdl-button--raised.firebaseui-idp-google.firebaseui-id-idp-button {
+      height: 25px;
+  }

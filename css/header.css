@@ -54,7 +54,12 @@ header img {
     text-transform: uppercase;
     background-color: #9933ff;
     padding: 10px 15px;
+    cursor: pointer;
 
+}
+
+#user-profile button:hover {
+    border: 3px solid #00e388;
 }
 
 #header-nav-container {
@@ -62,6 +67,9 @@ header img {
     font-size: 18px;
     text-transform: uppercase;
     height: 70px;
+    position: sticky;position:
+    -webkit-sticky;
+    top: 5px
 }
 
 #header-nav-container nav {
@@ -80,7 +88,8 @@ header img {
 }
 
 #header-nav-container a:hover {
-    
+    background-color: #fff35c;
+    color: black;
 }
 
 .favorites-nav {
