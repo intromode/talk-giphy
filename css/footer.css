@@ -1,8 +1,11 @@
 footer {
-    background-color: aquamarine;
+    background-color: black;
+    color: white;
     display: flex;
     align-content: center;
     padding: 10px 25px;
+    font-family: Loew-Heavy;
+
 }
 
 
@@ -14,29 +17,30 @@ footer {
 #footer-container section p:first-of-type {
     font-size: 16px;
     font-weight: bold;
+    color: #00ff99;
 }
 
 #footer-container section a {
     text-transform: uppercase;
     text-decoration: none;
-    color: white;
 }
 
 #footer-container section a:hover {
-    color: red;
+    color: #fff35c;
 }
 
-#footer-container section a:visited {
-    color: green;
-}
 
 #footer-credits {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 12px;
-    border-right: solid;
+    border-right: 1px solid white;
     width: 35%;
+}
+
+#footer-credits a {
+    color: #e646b6;
 }
 
 #footer-credits p {
@@ -50,4 +54,8 @@ footer {
     align-self: center;
     flex-grow: 1; 
     width: 100%;
+}
+
+#footer-nav a {
+    color: white;
 }
