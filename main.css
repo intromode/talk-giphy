@@ -2,33 +2,3 @@ body {
     padding: 0px;
     margin: 0px;
 }
-
-#header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: red;
-    height: 100px;
-}
-
-#static-header {
-    display: flex;
-    flex-grow: 1;
-}
-
-header img {
-    height: 80px;
-}
-
-#user-profile {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-#user-profile img {
-    height: 35px;
-    border: 1px solid white;
-    border-radius: 100%;
-}

@@ -3,8 +3,7 @@ import { auth } from './firebase.js';
 export function makeStaticHeader() {
     const html = `
     <section id="static-header">
-            <img src="assets/logo.jpg" alt="talk giphy to me logo">
-            <h1>Talk Giphy to Me</h1>
+            <h1>Talk</h1><img src="assets/logo.png" alt="talk giphy to me logo"><h1>Giphy to Me</h1>
         </section>`;
     const template = document.createElement('template');
     template.innerHTML = html;

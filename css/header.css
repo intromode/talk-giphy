@@ -1,0 +1,45 @@
+header {
+    font-family: Loew-Heavy;
+    color: white;
+    background-color: black;
+    padding: 0px 15px;
+}
+
+#header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 75px;
+}
+
+#header-container h1 {
+    text-transform: uppercase;
+    font-size: 42px;
+}
+
+#static-header {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+header img {
+    height: 80px;
+}
+
+#user-profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#user-profile img {
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+#header-nav-container {
+    font-family: Loew-Heavy;
+}
