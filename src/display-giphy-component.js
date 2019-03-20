@@ -1,10 +1,11 @@
-import { auth, favoritesByUserRef } from './firebase.js';
+import { auth, favoritesByUserRef, publicRef } from './firebase.js';
 
 export function makeGifTemplate(gif) {
     const html = `
     <li>
     <img src="${gif.images.fixed_width.url}" alt="${gif.title}">
     <span class="favorite-gif">☆ Add to Favorites</span>
+    <button>Add to Public</button>
     </li>`;
 
     const template = document.createElement('template');
@@ -22,9 +23,11 @@ export default function loadGifs(gifs){
     gifs.forEach(gif => {
         const gifDisplay = makeGifTemplate(gif);
         const favoriteGif = gifDisplay.querySelector('span');
+        const publicGif = gifDisplay.querySelector('button');
         const userId = auth.currentUser.uid;
         const userFavoritesRef = favoritesByUserRef.child(userId);
         const userFavoriteGifRef = userFavoritesRef.child(gif.id);
+        const userPublicRef = publicRef.child(gif.id);
         userFavoriteGifRef.once('value')
             .then(snapshot => {
                 const value = snapshot.val();
@@ -40,7 +43,16 @@ export default function loadGifs(gifs){
                     favoriteGif.textContent = '☆ Add to Favorites';
                     favoriteGif.classList.remove('fave');
                 }
-
+                publicGif.addEventListener('click', () => {
+                    userPublicRef.set({
+                        id: gif.id,
+                        images: {
+                            fixed_width: {
+                                url:gif.images.fixed_width.url
+                            }
+                        } 
+                    });
+                });        
                 favoriteGif.addEventListener('click', () => {
                     if(isFavorite) {
                         isFavorite = false;
@@ -63,6 +75,7 @@ export default function loadGifs(gifs){
                         favoriteGif.classList.add('fave');
                     }
                 });
+
         
             });
         displayGifs.appendChild(gifDisplay);

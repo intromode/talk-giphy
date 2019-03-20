@@ -12,3 +12,4 @@ export const auth = firebase.auth();
 const db = firebase.database();
 export const usersRef = db.ref('user');
 export const favoritesByUserRef = db.ref('favorites-by-user');
+export const publicRef = db.ref('public');
