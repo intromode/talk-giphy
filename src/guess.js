@@ -1,6 +1,9 @@
 import { words } from '../data/word-list.js';
 import makeApiURL from './make-api-url-component.js';
 import loadGifs from './display-giphy-component.js';
+import loadHeader from './header-component.js';
+
+loadHeader();
 
 const GUESS_LIMIT = 3;
 let guessCount = 0;
@@ -24,7 +27,6 @@ generateGifButton.addEventListener('click', () => {
         ).then(
             result => {
                 originalData = result.data;
-                console.log(originalData);
                 loadGifs(originalData.slice(0, 1));
             });    
 });

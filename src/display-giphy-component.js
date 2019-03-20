@@ -14,14 +14,12 @@ export function makeGifTemplate(gif) {
 
 const displayGifs = document.getElementById('gif-list');
 
-
 export default function loadGifs(gifs){
     while(displayGifs.children.length > 0) {
         displayGifs.lastElementChild.remove();
     }
 
     gifs.forEach(gif => {
-        console.log(gif);
         const gifDisplay = makeGifTemplate(gif);
         const favoriteGif = gifDisplay.querySelector('span');
         const userId = auth.currentUser.uid;
