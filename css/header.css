@@ -59,4 +59,10 @@ header img {
 
 #header-nav-container {
     font-family: Loew-Heavy;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#header-nav-container a {
+    text-decoration: none;
 }
