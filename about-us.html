@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-database.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
+  <link rel="stylesheet" href="about-us.css">
+  <title>About The Devs</title>
+</head>
+<body>
+    <header id="header-container"></header>
+    <section id="header-nav-container"></section>
+  <section id="dev-display">
+    <h1>ABOUT THE DEVS</h1>
+    <ul id="dev-display-container">
+      <li id="dave">
+        <p>Dave Cornelius</p>
+        <img src="./assets/dave.gif" alt="gif representing dave">
+        <p>Description: This developer's name is BLANK. Lorem ipsum dolor sit amet, consectetur adipiscing BLANK, sed do eiusmod tempor incididunt ut labore et BLANK magna aliqua. Ut enim ad BLANK veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </li>
+      <li id="ben">
+        <p>Ben Parisot</p>
+        <img src="./assets/ben.gif" alt="gif representing ben">
+        <p>Description: This developer's name is BLANK. Lorem ipsum dolor sit amet, consectetur adipiscing BLANK, sed do eiusmod tempor incididunt ut labore et BLANK magna aliqua. Ut enim ad BLANK veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </li>
+      <li id="phoebe">
+        <p>Phoebe LaBlonde</p>
+        <img src="./assets/phoebe.webp" alt="gif representing phoebe">
+        <p>Description: This developer's name is BLANK. Lorem ipsum dolor sit amet, consectetur adipiscing BLANK, sed do eiusmod tempor incididunt ut labore et BLANK magna aliqua. Ut enim ad BLANK veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </li>
+      <li id="olli">
+        <p>Olli Nieminen</p>
+        <img src="./assets/olli.webp" alt="gif representing olli">
+        <p>Description: This developer's name is BLANK. Lorem ipsum dolor sit amet, consectetur adipiscing BLANK, sed do eiusmod tempor incididunt ut labore et BLANK magna aliqua. Ut enim ad BLANK veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="add-user">
+    <form id="add-user-form">
+      <fieldset>
+        <legend>JOIN THE DEV SIDE?</legend>
+          <label>
+            What Is Your Name?
+            <input type="text" id="name">
+          </label>
+          <label>Write 1 noun:
+            <input type="text" id="noun">
+          </label>
+          <label>Write your first adjective:
+            <input type="text" id="adj1">
+          </label>
+          <label>Write your second adjective :
+            <input type="text" id="adj2">
+          </label>
+          <label>Write your third adjective:
+            <input type="text" id="adj3">
+          <button>submit</button>
+      </fieldset>
+    </form>
+  </section>
+  <footer id="footer-container"></footer>
+  
+  <script type="module" src="./src/about-us.js"></script>
+</body>
+</html>
