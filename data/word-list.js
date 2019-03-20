@@ -786,5 +786,825 @@ export const words = [
     {
         '': '6 863',
         'word': 'energy'
+    },
+    {
+        '': 69683,
+        'word': 'dog'
+    },
+    {
+        '': 58762,
+        'word': 'cat'
+    },
+    {
+        '': 58218,
+        'word': 'puppy'
+    },
+    {
+        '': 41922,
+        'word': 'kitten'
+    },
+    {
+        '': 36752,
+        'word': 'aligator'
+    },
+    {
+        '': 32595,
+        'word': 'crow'
+    },
+    {
+        '': 30241,
+        'word': 'snake'
+    },
+    {
+        '': 27374,
+        'word': 'chipmunk'
+    },
+    {
+        '': 27156,
+        'word': 'squirrel'
+    },
+    {
+        '': 26074,
+        'word': 'hamster'
+    },
+    {
+        '': 25561,
+        'word': 'mouse'
+    },
+    {
+        '': 25409,
+        'word': 'rat'
+    },
+    {
+        '': 25073,
+        'word': 'gerbil'
+    },
+    {
+        '': 23559,
+        'word': 'fish'
+    },
+    {
+        '': 23460,
+        'word': 'eagle'
+    },
+    {
+        '': 22601,
+        'word': 'giraffe'
+    },
+    {
+        '': 22039,
+        'word': 'elephant'
+    },
+    {
+        '': 21266,
+        'word': 'tiger'
+    },
+    {
+        '': 20601,
+        'word': 'lion'
+    },
+    {
+        '': 19631,
+        'word': 'gazelle'
+    },
+    {
+        '': 18430,
+        'word': 'hyena'
+    },
+    {
+        '': 18222,
+        'word': 'jackal'
+    },
+    {
+        '': 18207,
+        'word': 'hippo'
+    },
+    {
+        '': 18056,
+        'word': 'whale'
+    },
+    {
+        '': 17806,
+        'word': 'dolphin'
+    },
+    {
+        '': 17800,
+        'word': 'squid'
+    },
+    {
+        '': 17589,
+        'word': 'manatee'
+    },
+    {
+        '': 17354,
+        'word': 'shark'
+    },
+    {
+        '': 17187,
+        'word': 'jellyfish'
+    },
+    {
+        '': 17178,
+        'word': 'starfish'
+    },
+    {
+        '': 17171,
+        'word': 'turtle'
+    },
+    {
+        '': 17131,
+        'word': 'penguin'
+    },
+    {
+        '': 17117,
+        'word': 'worm'
+    },
+    {
+        '': 17028,
+        'word': 'spider'
+    },
+    {
+        '': 16872,
+        'word': 'beetle'
+    },
+    {
+        '': 16809,
+        'word': 'tarantula'
+    },
+    {
+        '': 16615,
+        'word': 'caterpillar'
+    },
+    {
+        '': 16540,
+        'word': 'butterfly'
+    },
+    {
+        '': 16379,
+        'word': 'wasp'
+    },
+    {
+        '': 16358,
+        'word': 'bumblebee'
+    },
+    {
+        '': 16107,
+        'word': 'vulture'
+    },
+    {
+        '': 15694,
+        'word': 'chameleon'
+    },
+    {
+        '': 15578,
+        'word': 'scorpion'
+    },
+    {
+        '': 15570,
+        'word': 'rhino'
+    },
+    {
+        '': 15318,
+        'word': 'bat'
+    },
+    {
+        '': 15290,
+        'word': 'centipede'
+    },
+    {
+        '': 15195,
+        'word': 'gecko'
+    },
+    {
+        '': 15146,
+        'word': 'lizard'
+    },
+    {
+        '': 15061,
+        'word': 'frog'
+    },
+    {
+        '': 15039,
+        'word': 'wallabee'
+    },
+    {
+        '': 14949,
+        'word': 'moose'
+    },
+    {
+        '': 14931,
+        'word': 'deer'
+    },
+    {
+        '': 14872,
+        'word': 'elk'
+    },
+    {
+        '': 14660,
+        'word': 'wolf'
+    },
+    {
+        '': 14547,
+        'word': 'jaguar'
+    },
+    {
+        '': 14518,
+        'word': 'monkey'
+    },
+    {
+        '': 14365,
+        'word': 'warthog'
+    },
+    {
+        '': 14294,
+        'word': 'meerkat'
+    },
+    {
+        '': 14152,
+        'word': 'toucan'
+    },
+    {
+        '': 14055,
+        'word': 'bear'
+    },
+    {
+        '': 14051,
+        'word': 'hawk'
+    },
+    {
+        '': 14032,
+        'word': 'vampire'
+    },
+    {
+        '': 13897,
+        'word': 'dragon'
+    },
+    {
+        '': 13860,
+        'word': 'phoenix'
+    },
+    {
+        '': 13831,
+        'word': 'hobbit'
+    },
+    {
+        '': 13697,
+        'word': 'orc'
+    },
+    {
+        '': 13661,
+        'word': 'unicorn'
+    },
+    {
+        '': 13640,
+        'word': 'leprechaun'
+    },
+    {
+        '': 13344,
+        'word': 'broom'
+    },
+    {
+        '': 13199,
+        'word': 'cauldron'
+    },
+    {
+        '': 12695,
+        'word': 'wizard'
+    },
+    {
+        '': 12554,
+        'word': 'snitch'
+    },
+    {
+        '': 12543,
+        'word': 'elf'
+    },
+    {
+        '': 12525,
+        'word': 'wolverine'
+    },
+    {
+        '': 12476,
+        'word': 'dwarf'
+    },
+    {
+        '': 12237,
+        'word': 'magic'
+    },
+    {
+        '': 12091,
+        'word': 'quidditch'
+    },
+    {
+        '': 11762,
+        'word': 'patronus'
+    },
+    {
+        '': 11755,
+        'word': 'giant'
+    },
+    {
+        '': 11649,
+        'word': 'centaur'
+    },
+    {
+        '': 11618,
+        'word': 'wand'
+    },
+    {
+        '': 11571,
+        'word': 'pegasus'
+    },
+    {
+        '': 11497,
+        'word': 'snitch'
+    },
+    {
+        '': 11428,
+        'word': 'fairy'
+    },
+    {
+        '': 11411,
+        'word': 'witch'
+    },
+    {
+        '': 11370,
+        'word': 'alchemist'
+    },
+    {
+        '': 11360,
+        'word': 'owl'
+    },
+    {
+        '': 11279,
+        'word': 'hourglass'
+    },
+    {
+        '': 11266,
+        'word': 'utensils'
+    },
+    {
+        '': 11252,
+        'word': 'napkin'
+    },
+    {
+        '': 11238,
+        'word': 'spice'
+    },
+    {
+        '': 11159,
+        'word': 'drink'
+    },
+    {
+        '': 11138,
+        'word': 'orange juice'
+    },
+    {
+        '': 11041,
+        'word': 'squash'
+    },
+    {
+        '': 10855,
+        'word': 'grill'
+    },
+    {
+        '': 10835,
+        'word': 'fire'
+    },
+    {
+        '': 10823,
+        'word': 'eggs'
+    },
+    {
+        '': 10721,
+        'word': 'bacon'
+    },
+    {
+        '': 10697,
+        'word': 'candy'
+    },
+    {
+        '': 10686,
+        'word': 'hamburger'
+    },
+    {
+        '': 10651,
+        'word': 'mustard'
+    },
+    {
+        '': 10590,
+        'word': 'cake'
+    },
+    {
+        '': 10587,
+        'word': 'vegetables'
+    },
+    {
+        '': 10531,
+        'word': 'paleo'
+    },
+    {
+        '': 10438,
+        'word': 'vegan'
+    },
+    {
+        '': 10326,
+        'word': 'popcorn'
+    },
+    {
+        '': 10136,
+        'word': 'fruit'
+    },
+    {
+        '': 9991,
+        'word': 'shoe laces'
+    },
+    {
+        '': 9986,
+        'word': 'mushrooms'
+    },
+    {
+        '': 9965,
+        'word': 'avocado'
+    },
+    {
+        '': 9931,
+        'word': 'sprinkles'
+    },
+    {
+        '': 9907,
+        'word': 'pancake'
+    },
+    {
+        '': 9874,
+        'word': 'mac and  cheese'
+    },
+    {
+        '': 9837,
+        'word': 'nachos'
+    },
+    {
+        '': 9794,
+        'word': 'sushi'
+    },
+    {
+        '': 9661,
+        'word': 'asparagus'
+    },
+    {
+        '': 9593,
+        'word': 'grape'
+    },
+    {
+        '': 9508,
+        'word': 'tortilla'
+    },
+    {
+        '': 9368,
+        'word': 'barbacoa'
+    },
+    {
+        '': 9352,
+        'word': 'poblano'
+    },
+    {
+        '': 9351,
+        'word': 'chili'
+    },
+    {
+        '': 9313,
+        'word': 'carrot'
+    },
+    {
+        '': 9312,
+        'word': 'broccoli'
+    },
+    {
+        '': 9147,
+        'word': 'tomatillo'
+    },
+    {
+        '': 9123,
+        'word': 'carnitas'
+    },
+    {
+        '': 9055,
+        'word': 'relish'
+    },
+    {
+        '': 9019,
+        'word': 'pineapple'
+    },
+    {
+        '': 8993,
+        'word': 'pear'
+    },
+    {
+        '': 8986,
+        'word': 'banana'
+    },
+    {
+        '': 8863,
+        'word': 'watermelon'
+    },
+    {
+        '': 8838,
+        'word': 'rice'
+    },
+    {
+        '': 8827,
+        'word': 'spinach'
+    },
+    {
+        '': 8810,
+        'word': 'pizza'
+    },
+    {
+        '': 8809,
+        'word': 'soup'
+    },
+    {
+        '': 8769,
+        'word': 'tea'
+    },
+    {
+        '': 8760,
+        'word': 'coffee'
+    },
+    {
+        '': 8732,
+        'word': 'noodle'
+    },
+    {
+        '': 8662,
+        'word': 'strawberry'
+    },
+    {
+        '': 8636,
+        'word': 'beans'
+    },
+    {
+        '': 8468,
+        'word': 'sandwich'
+    },
+    {
+        '': 8368,
+        'word': 'tomato'
+    },
+    {
+        '': 8365,
+        'word': 'cheese'
+    },
+    {
+        '': 8347,
+        'word': 'taco'
+    },
+    {
+        '': 8344,
+        'word': 'burrito'
+    },
+    {
+        '': 8291,
+        'word': 'cookies'
+    },
+    {
+        '': 8281,
+        'word': 'lasagna'
+    },
+    {
+        '': 8272,
+        'word': 'sugar'
+    },
+    {
+        '': 8105,
+        'word': 'syrup'
+    },
+    {
+        '': 8098,
+        'word': 'hot sauce'
+    },
+    {
+        '': 8040,
+        'word': 'dressing'
+    },
+    {
+        '': 8005,
+        'word': 'croutons'
+    },
+    {
+        '': 7912,
+        'word': 'olives'
+    },
+    {
+        '': 7900,
+        'word': 'beer'
+    },
+    {
+        '': 7896,
+        'word': 'wine'
+    },
+    {
+        '': 7880,
+        'word': 'whiskey'
+    },
+    {
+        '': 7866,
+        'word': 'tide pods'
+    },
+    {
+        '': 7863,
+        'word': 'chicken'
+    },
+    {
+        '': 7796,
+        'word': 'cow'
+    },
+    {
+        '': 7791,
+        'word': 'fish'
+    },
+    {
+        '': 7752,
+        'word': 'corn'
+    },
+    {
+        '': 7745,
+        'word': 'hot pocket'
+    },
+    {
+        '': 7670,
+        'word': 'easy cheese'
+    },
+    {
+        '': 7660,
+        'word': 'instant potatoes'
+    },
+    {
+        '': 7637,
+        'word': 'peanuts'
+    },
+    {
+        '': 7627,
+        'word': 'cereal'
+    },
+    {
+        '': 7606,
+        'word': 'milk'
+    },
+    {
+        '': 7604,
+        'word': 'steak'
+    },
+    {
+        '': 7599,
+        'word': 'driving'
+    },
+    {
+        '': 7560,
+        'word': 'skateboarding'
+    },
+    {
+        '': 7556,
+        'word': 'snowboarding'
+    },
+    {
+        '': 7513,
+        'word': 'cutting'
+    },
+    {
+        '': 7505,
+        'word': 'gulping'
+    },
+    {
+        '': 7490,
+        'word': 'frying'
+    },
+    {
+        '': 7490,
+        'word': 'flailing'
+    },
+    {
+        '': 7457,
+        'word': 'screaming'
+    },
+    {
+        '': 7441,
+        'word': 'kneeing'
+    },
+    {
+        '': 7410,
+        'word': 'waiting'
+    },
+    {
+        '': 7355,
+        'word': 'writing'
+    },
+    {
+        '': 7296,
+        'word': 'singing'
+    },
+    {
+        '': 7266,
+        'word': 'acting'
+    },
+    {
+        '': 7258,
+        'word': 'erasing'
+    },
+    {
+        '': 7214,
+        'word': 'drawing'
+    },
+    {
+        '': 7185,
+        'word': 'learning'
+    },
+    {
+        '': 7124,
+        'word': 'teaching'
+    },
+    {
+        '': 7117,
+        'word': 'listening'
+    },
+    {
+        '': 7054,
+        'word': 'ignoring'
+    },
+    {
+        '': 7032,
+        'word': 'stretching'
+    },
+    {
+        '': 7022,
+        'word': 'breathing'
+    },
+    {
+        '': 7009,
+        'word': 'creating'
+    },
+    {
+        '': 6999,
+        'word': 'sitting'
+    },
+    {
+        '': 6977,
+        'word': 'rowing'
+    },
+    {
+        '': 6949,
+        'word': 'bowing'
+    },
+    {
+        '': 6943,
+        'word': 'thanking'
+    },
+    {
+        '': 6893,
+        'word': 'shaking'
+    },
+    {
+        '': 6889,
+        'word': 'sparing'
+    },
+    {
+        '': 6881,
+        'word': 'yawning'
+    },
+    {
+        '': 6880,
+        'word': 'laughing'
+    },
+    {
+        '': 6874,
+        'word': 'barring'
+    },
+    {
+        '': 6874,
+        'word': 'dancing'
+    },
+    {
+        '': 6863,
+        'word': 'clapping'
+    },
+    {
+        '': '',
+        'word': 'flying'
+    },
+    {
+        '': '',
+        'word': 'chopping'
+    },
+    {
+        '': '',
+        'word': 'mopping'
+    },
+    {
+        '': '',
+        'word': 'popping'
+    },
+    {
+        '': '',
+        'word': 'plotting'
     }
 ];
