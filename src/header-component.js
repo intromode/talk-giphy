@@ -24,10 +24,10 @@ export function makeProfileHeader(user) {
 export function makeHeaderNav() {
     const html = `
     <nav>
-        <a href="./favorites.html">See Your Faves</a>
-        <a href="translate.html">Giphy Translate</a>
-        <a href="guess.html">Giphy Guess</a>
-        <a href="index.html">Home</a>
+        <a href="./favorites.html" class="favorites-nav">See Your Faves</a>
+        <a href="translate.html" class="translate-nav">Giphy Translate</a>
+        <a href="guess.html" class="guess-nav">Giphy Guess</a>
+        <a href="index.html" class="home-nav">Home</a>
     </nav>`;
     const template = document.createElement('template');
     template.innerHTML = html;

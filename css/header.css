@@ -59,10 +59,42 @@ header img {
 
 #header-nav-container {
     font-family: Loew-Heavy;
-    font-size: 25px;
+    font-size: 18px;
     text-transform: uppercase;
+    height: 70px;
+}
+
+#header-nav-container nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #header-nav-container a {
     text-decoration: none;
+    width: 24.62%;
+    padding: 20px 0px; 
+    text-align: center;
+    border: 2px solid white;
+    color: white;
+}
+
+#header-nav-container a:hover {
+    
+}
+
+.favorites-nav {
+    background-color: #00ccff;
+}
+
+.translate-nav {
+    background-color: #00e388;
+}
+
+.guess-nav {
+    background-color: #e646b6;
+}
+
+.home-nav {
+    background-color: #ff6666;
 }
