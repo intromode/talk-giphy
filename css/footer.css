@@ -1,0 +1,53 @@
+footer {
+    background-color: aquamarine;
+    display: flex;
+    align-content: center;
+    padding: 10px 25px;
+}
+
+
+#footer-container div {
+    width: 100%;
+    display: flex;
+}
+
+#footer-container section p:first-of-type {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#footer-container section a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+#footer-container section a:hover {
+    color: red;
+}
+
+#footer-container section a:visited {
+    color: green;
+}
+
+#footer-credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    border-right: solid;
+    width: 35%;
+}
+
+#footer-credits p {
+    margin: 0px;
+}
+
+#footer-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    align-self: center;
+    flex-grow: 1; 
+    width: 100%;
+}
