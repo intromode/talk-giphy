@@ -13,15 +13,31 @@ export function makeGifTemplate(gif) {
     return template.content;
 }
 
+export function makePublicTemplate(gif) {
+    const html = `
+    <li>
+    <img src="${gif.images.fixed_width.url}" alt="${gif.title}">
+    </li>`;
+
+    const template = document.createElement('template');
+    template.innerHTML = html;
+    return template.content;
+}
+
 const displayGifs = document.getElementById('gif-list');
 
-export default function loadGifs(gifs){
+export default function loadGifs(gifs, options){
     while(displayGifs.children.length > 0) {
         displayGifs.lastElementChild.remove();
     }
 
     gifs.forEach(gif => {
-        const gifDisplay = makeGifTemplate(gif);
+        let gifDisplay;
+        if(options && options.public) {
+            gifDisplay = makePublicTemplate(gif);
+        } else {
+            gifDisplay = makeGifTemplate(gif);
+        }
         const favoriteGif = gifDisplay.querySelector('span');
         const publicGif = gifDisplay.querySelector('button');
         const userId = auth.currentUser.uid;

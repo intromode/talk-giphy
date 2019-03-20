@@ -6,13 +6,16 @@ import loadFooter from './footer-component.js';
 
 loadHeader();
 loadFooter();
+const options = {
+    public: true
+};
 
 auth.onAuthStateChanged(() => {
     publicRef.once('value')
         .then(snapshot => {
             const value = snapshot.val();
             const gifs = objectToArray(value);
-            loadGifs(gifs);
+            loadGifs(gifs, options);
         });
 
 });
