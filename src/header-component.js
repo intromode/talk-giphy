@@ -21,7 +21,22 @@ export function makeProfileHeader(user) {
     template.innerHTML = html;
     return template.content;
 }
+
+export function makeHeaderNav() {
+    const html = `
+    <nav>
+        <a href="./favorites.html">See Your Faves</a>
+        <a href="translate.html">Giphy Translate</a>
+        <a href="guess.html">Giphy Guess</a>
+        <a href="index.html">Home</a>
+    </nav>`;
+    const template = document.createElement('template');
+    template.innerHTML = html;
+    return template.content;
+}
+
 const headerNode = document.getElementById('header-container');
+const headerNavNode = document.getElementById('header-nav-container');
 
 export default function loadHeader(options) {
     const staticHeader = makeStaticHeader();
@@ -42,4 +57,8 @@ export default function loadHeader(options) {
             window.location = 'auth.html';
         }
     });
+
+    //append headernav to headernav container
+    const headerNav = makeHeaderNav();
+    headerNavNode.appendChild(headerNav);
 }
