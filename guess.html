@@ -8,32 +8,35 @@
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-database.js"></script>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <title>Guess</title>
 </head>
 <body>
-    <header id="header-container"></header>
-    <section id="header-nav-container"></section>
-    <main>
-        <section id="generate-display">
-            <button id="generate-gif">Generate</button>
-        </section>
-        <section>
-            <ul id="gif-list">
-
-            </ul>
-        </section>
-        <section id="guess-display">
-            <form id="guess-form">
-                <label>
-                    What's your guess?
-                    <input type="text" name="guess-input" id="guess-input" placeholder="Enter guess here">
-                </label>
-                <button>Submit</button>
-            </form>
-        </section>
-        <section id="game-outcome-display"></section>
-    </main>
+    <div id="container">
+        <header id="header-container"></header>
+        <section id="header-nav-container"></section>
+        <main>
+            <section id="generate-display">
+                <button id="generate-gif">Generate</button>
+            </section>
+            <section>
+                <ul id="gif-list">
+    
+                </ul>
+            </section>
+            <section id="guess-display">
+                <form id="guess-form">
+                    <label>
+                        What's your guess?
+                        <input type="text" name="guess-input" id="guess-input" placeholder="Enter guess here">
+                    </label>
+                    <button>Submit</button>
+                </form>
+            </section>
+            <section id="game-outcome-display"></section>
+        </main>
+    </div>
     <footer id="footer-container"></footer>
     <script type="module" src="src/guess.js"></script>
 </body>
