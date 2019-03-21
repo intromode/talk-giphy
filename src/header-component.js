@@ -36,7 +36,7 @@ export function makeHeaderNav() {
         <a href="./favorites.html" class="favorites-nav">See Your Faves</a>
         <a href="translate.html" class="translate-nav">Giphy Translate</a>
         <a href="guess.html" class="guess-nav">Giphy Guess</a>
-        <a href="index.html" class="home-nav">Home</a>
+        <a href="public.html" class="home-nav">Public</a>
     </nav>`;
     const template = document.createElement('template');
     template.innerHTML = html;
