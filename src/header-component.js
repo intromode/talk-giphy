@@ -10,6 +10,15 @@ export function makeStaticHeader() {
     return template.content;
 }
 
+export function makeShareButton() {
+    const html = `<div class="fb-share-button" data-href="https://talkgiphytome.netlify.com" data-layout="button_count" data-size="small">
+    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftalkgiphytome.netlify.com&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
+</div>`;
+    const template = document.createElement('template');
+    template.innerHTML = html;
+    return template.content;
+}
+
 export function makeProfileHeader(user) {
     const html = `<section id="user-profile">
         <img src="${user.photoURL}">
@@ -41,6 +50,8 @@ export default function loadHeader(options) {
     const staticHeader = makeStaticHeader();
     headerNode.appendChild(staticHeader);
     if(options && options.skipAuth) {
+        const shareButton = makeShareButton();
+        headerNode.appendChild(shareButton);
         return;
     }
     auth.onAuthStateChanged(user => {
