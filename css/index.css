@@ -70,3 +70,17 @@ h2 {
     background-color: #00e388;
     text-align: center;
 }
+
+
+#body-gifs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#body-gifs img {
+  height: 150px;
+  width: auto;
+}
+
