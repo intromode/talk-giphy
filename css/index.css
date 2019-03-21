@@ -28,7 +28,7 @@ h2 {
 #game-choice {
     font-family: Loew-Heavy;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     color: white;
     width: 100%;
 }
