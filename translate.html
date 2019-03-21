@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,29 +11,37 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/translate.css">
+    <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
     <title>Translate</title>
 </head>
+
 <body>
     <div id="container">
         <header id="header-container"></header>
         <section id="header-nav-container"></section>
         <main>
-            <form id="input-form">
-                <label>
-                    Enter a message you want to translate:
-                    <input type="text" id="message-input">
-                    <button>Submit</button>
-                </label>
-            </form>
+            <div id="translate-display">
+                <div>
+                    <h1>Giphy Translate</h1>
+                    <p>Enter a word or phrase into the form and we'll translate each word into a gif.</p>
+                </div>
+                <form id="input-form">
+                        <input type="text" id="message-input" placeholder="Enter a message">
+                        <button>Submit</button>
+                </form>
+            </div>
+
             <section id="gif-display">
                 <ul id="gif-list">
-    
+
                 </ul>
             </section>
-    
+
         </main>
     </div>
     <footer id="footer-container"></footer>
     <script type="module" src="./src/translate.js"></script>
 </body>
+
 </html>

@@ -116,8 +116,27 @@ main {
     text-transform: uppercase;
 }
 
+.li-buttons span:hover {
+    color: #e646b6;
+    cursor: pointer;
+}
+
 .li-buttons button {
     border: solid;
     font-family: Loew-Heavy;
     text-transform: uppercase;
+}
+
+.li-buttons button:hover {
+    background-color: #e646b6;
+    color: white;
+    cursor: pointer;
+
+}
+
+#game-outcome-display p {
+    font-family: Loew-Heavy;
+    font-size:42px;
+    text-transform: uppercase;
+
 }

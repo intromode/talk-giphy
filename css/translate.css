@@ -1,0 +1,116 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 70px;
+}
+
+#translate-display {
+    display: flex;
+    align-items: center;
+    border-bottom: 10px solid white;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+#translate-display div {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-right: 40px;
+}
+
+#translate-display h1 {
+    font-family: Loew-Heavy;
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+#translate-display p {
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+#list-gif-container {
+    width:100%; 
+ }
+ 
+ #gif-list {
+     display:flex;
+     widows: 100%;
+     justify-content: center; 
+ }
+ #gif-list li{
+     display: flex;
+     flex-direction: column;
+     margin: 20px;
+     list-style: none;
+     min-width: 300px;
+     background-color: lightgrey;
+ }
+ 
+ #gif-list li img {
+     align-self: center;
+ }
+ 
+ .li-buttons {
+     background-color: #fff35c;
+     color: black;
+     display: flex;
+     justify-content: space-between;
+     padding: 5px;
+     font-size: 16px;
+     font-family: Loew-Heavy;
+     text-transform: uppercase;
+ }
+ 
+ .li-buttons span:hover {
+     color: #e646b6;
+     cursor: pointer;
+ }
+ 
+ .li-buttons button {
+     border: solid;
+     font-family: Loew-Heavy;
+     text-transform: uppercase;
+ }
+ 
+ .li-buttons button:hover {
+     background-color: #e646b6;
+     color: white;
+     cursor: pointer;
+ }
+
+ #input-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 50px;
+}
+#message-input {
+    height: 40px;
+    width: 80%;
+    text-align: right;
+    font-size: 22px;
+    padding-right: 15px;
+    margin-right: 0px;
+    border: none;
+}
+
+#input-form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 42px;
+    background-color: #fff35c;
+    color: #e646b6;
+    margin: 0px;
+    padding: 0px 10px;
+    font-size: 16px;
+    font-family: Loew-Heavy;
+    text-transform: uppercase;
+}
