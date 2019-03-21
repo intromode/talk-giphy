@@ -3,9 +3,11 @@ import { auth, favoritesByUserRef, publicRef } from './firebase.js';
 export function makeGifTemplate(gif) {
     const html = `
     <li>
+    <div class="li-buttons">
+        <span class="favorite-gif">☆ Add to Faves</span>
+        <button>Add to Public</button>
+    </div>
     <img src="${gif.images.fixed_height.url}" alt="${gif.title}">
-    <span class="favorite-gif">☆ Add to Favorites</span>
-    <button>Add to Public</button>
     </li>`;
 
     const template = document.createElement('template');
@@ -56,7 +58,7 @@ export default function loadGifs(gifs, options){
                 }
                 else {
                     isFavorite = false;
-                    favoriteGif.textContent = '☆ Add to Favorites';
+                    favoriteGif.textContent = '☆ Add to Faves';
                     favoriteGif.classList.remove('fave');
                 }
                 publicGif.addEventListener('click', () => {
@@ -73,7 +75,7 @@ export default function loadGifs(gifs, options){
                     if(isFavorite) {
                         isFavorite = false;
                         userFavoriteGifRef.remove();
-                        favoriteGif.textContent = '☆ Add to Favorites';
+                        favoriteGif.textContent = '☆ Add to Faves';
                         favoriteGif.classList.remove('fave');
                     }
 
