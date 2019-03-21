@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 import madLibTemplate from '../src/mad-lib.js';
 const test = QUnit.test;
 
@@ -13,11 +14,7 @@ test('add li with user\'s info', assert => {
     const randomPic = '../assets/wave.gif';
 
     const expected = `
-     <li>
-       <p>phoebe</p>
-       <img src="../assets/wave.gif">
-       <p>Description: phoebe is a designer something. Lorem ipsum dolor sit amet, consectetur adipiscing blue, sed do eiusmod tempor incididunt ut labore et loud magna aliqua. Ut enim ad funny veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-     </li>
+    <li> <div class=\"dev-img-container\"> <img src=\"funny\"> </div> <div class=\"name\"> <h2>phoebe</h2> <p>Hi, my name is phoebe. I like to designer... I guess. My spirit animal is a blue giraffe. In my spare time I like to loud. </p> </div> </li>
      `;
   //act
     const result = madLibTemplate(name, noun, adj1, adj2, adj3, randomPic);

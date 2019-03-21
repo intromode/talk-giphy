@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 import { makeGifTemplate } from '../src/display-giphy-component.js';
 const test = QUnit.test;
 
@@ -7,14 +8,14 @@ test('make giphy list with template', assert => {
     const gif = {
         id: 'FP2OpdSFCR7hK',
         images: {
-            fixed_width: { 
+            fixed_height: { 
                 url: 'https://media3.giphy.com/media/bbshzgyFQDqPHXBo4c/200w.gif',
             }
         },
         title: 'dumb dog GIF'
     };
 //Arrange
-    const expected = '<li> <img src="https://media3.giphy.com/media/bbshzgyFQDqPHXBo4c/200w.gif" alt="dumb dog GIF"> <span class="favorite-gif">☆ Add to Favorites</span> </li>';
+    const expected = '<li> <div class=\"li-buttons\"> <span class=\"favorite-gif\">☆ Add to Faves</span> <button>Add to Public</button> </div> <img src=\"https://media3.giphy.com/media/bbshzgyFQDqPHXBo4c/200w.gif\" alt=\"dumb dog GIF\"> </li>';
 //Act
     const result = makeGifTemplate(gif);
 //Assert
