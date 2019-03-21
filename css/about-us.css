@@ -1,0 +1,45 @@
+#dev-display {
+    display: flex;
+    flex-direction: column;
+}
+
+#dev-display h1 {
+    text-align: center;
+    font-family: Loew-Heavy;
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 0px; 
+}
+
+#dev-display-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#dev-display-container li {
+    list-style: none;
+    display: flex;
+    width: 700px;
+    margin: 10px;
+}
+
+.dev-img-container {
+    width: 200px;
+}
+
+.dev-img-container img {
+    width: 100%;
+    margin-right: 35px;
+}
+
+.name {
+    width: 60%
+}
+
+.name p {
+    font-size: 22px;
+    margin: 0px;
+}
+
