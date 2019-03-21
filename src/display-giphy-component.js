@@ -3,7 +3,7 @@ import { auth, favoritesByUserRef, publicRef } from './firebase.js';
 export function makeGifTemplate(gif) {
     const html = `
     <li>
-    <img src="${gif.images.fixed_width.url}" alt="${gif.title}">
+    <img src="${gif.images.fixed_height.url}" alt="${gif.title}">
     <span class="favorite-gif">☆ Add to Favorites</span>
     <button>Add to Public</button>
     </li>`;
@@ -16,7 +16,7 @@ export function makeGifTemplate(gif) {
 export function makePublicTemplate(gif) {
     const html = `
     <li>
-    <img src="${gif.images.fixed_width.url}" alt="${gif.title}">
+    <img src="${gif.images.fixed_height.url}" alt="${gif.title}">
     </li>`;
 
     const template = document.createElement('template');
@@ -63,8 +63,8 @@ export default function loadGifs(gifs, options){
                     userPublicRef.set({
                         id: gif.id,
                         images: {
-                            fixed_width: {
-                                url:gif.images.fixed_width.url
+                            fixed_height: {
+                                url:gif.images.fixed_height.url
                             }
                         } 
                     });
@@ -82,8 +82,8 @@ export default function loadGifs(gifs, options){
                         userFavoriteGifRef.set({
                             id: gif.id,
                             images: {
-                                fixed_width: {
-                                    url:gif.images.fixed_width.url
+                                fixed_height: {
+                                    url:gif.images.fixed_height.url
                                 }
                             } 
                         });    
