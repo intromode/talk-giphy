@@ -1,9 +1,13 @@
-export default function madLibTemplate(name, noun, adj1, adj2, adj3, randomPic) {
+export default function madLibTemplate(name, activity, adj1, activity2, randomPic) {
     const html = `
  <li>
-   <p>${name}</p>
-   <img src="${randomPic}">
-   <p>Description: ${name} is a ${noun} something. Lorem ipsum dolor sit amet, consectetur adipiscing ${adj1}, sed do eiusmod tempor incididunt ut labore et ${adj2} magna aliqua. Ut enim ad ${adj3} veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+ <div class="dev-img-container">
+  <img src="${randomPic}">
+  </div>
+  <div class="name">  
+   <h2>${name}</h2>   
+   <p>Hi, my name is ${name}. I like to ${activity}... I guess. My spirit animal is a ${adj1} giraffe. In my spare time I like to ${activity2}. </p>
+   </div>
  </li>
  `;
     const template = document.createElement('template');

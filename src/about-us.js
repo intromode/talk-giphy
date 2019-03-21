@@ -12,14 +12,13 @@ const userPic = ['../assets/wave.gif', '../assets/piggy.webp', '../assets/breakf
 
 addUserForm.addEventListener('submit', event => {
     event.preventDefault();
-    const name = document.getElementById('name').value;
-    const noun = document.getElementById('noun').value;
-    const adj1 = document.getElementById('adj1').value;
-    const adj2 = document.getElementById('adj2').value;
-    const adj3 = document.getElementById('adj3').value;
+    const name = document.getElementById('name').value.toUpperCase();
+    const activity = document.getElementById('activity').value.toUpperCase();
+    const adj1 = document.getElementById('adj1').value.toUpperCase();
+    const activity2 = document.getElementById('activity2').value.toUpperCase();
 
     const randomPic = userPic[Math.floor(Math.random() * userPic.length)];
 
-    const userLi = madLibTemplate(name, noun, adj1, adj2, adj3, randomPic);
+    const userLi = madLibTemplate(name, activity, adj1, activity2, randomPic);
     devDisplayUl.appendChild(userLi);
 });
