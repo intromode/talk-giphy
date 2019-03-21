@@ -36,6 +36,7 @@ main {
  
  #gif-list {
      display:flex;
+     flex-wrap: wrap;
      widows: 100%;
      justify-content: center; 
  }

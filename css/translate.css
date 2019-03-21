@@ -42,6 +42,7 @@ main {
      display:flex;
      widows: 100%;
      justify-content: center; 
+     flex-wrap: wrap;
  }
  #gif-list li{
      display: flex;
