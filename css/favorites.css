@@ -47,14 +47,14 @@ main {
  }
  
  .li-buttons {
-     background-color: #fff35c;
-     color: black;
-     display: flex;
-     justify-content: space-between;
-     padding: 5px;
-     font-size: 16px;
-     font-family: Loew-Heavy;
-     text-transform: uppercase;
+    background-color: #fff35c;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 16px;
+    font-family: Loew-Heavy;
+    text-transform: uppercase;
  }
  
  .li-buttons span:hover {
