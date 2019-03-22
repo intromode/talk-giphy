@@ -16,10 +16,10 @@ test('make auth profile header area', assert => {
         displayName: 'Display Name',
         photoURL: 'assets/logo.jpg'
     };
-
+    const avatar = user.photoURL || './assets/user-icon.jpg';
     const expected = `<section id="user-profile">
-        <img src="assets/logo.jpg">
-        <p>Display Name</p>
+        <img src="${avatar}">
+        <p>${user.displayName}</p>
         <button>Sign Out</button>
     </section>`;
 

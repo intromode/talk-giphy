@@ -20,8 +20,9 @@ export function makeShareButton() {
 }
 
 export function makeProfileHeader(user) {
+    const avatar = user.photoURL || './assets/user-icon.jpg';
     const html = `<section id="user-profile">
-        <img src="${user.photoURL}">
+        <img src="${avatar}">
         <p>${user.displayName}</p>
         <button>Sign Out</button>
     </section>`;
