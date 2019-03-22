@@ -10,11 +10,10 @@ loadFooter();
 auth.onAuthStateChanged(user => {
     const userId = user.uid;
     const userFavoritesRef = favoritesByUserRef.child(userId);
-    userFavoritesRef.once('value')
-        .then(snapshot => {
-            const value = snapshot.val();
-            const gifs = objectToArray(value);
-            loadGifs(gifs);
-        });
+    userFavoritesRef.on('value', snapshot => {
+        const value = snapshot.val();
+        const gifs = objectToArray(value);
+        loadGifs(gifs);
+    });
 
 });
