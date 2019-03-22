@@ -10,3 +10,24 @@
 1. Giphy Chat: Using Firebase Messaging, the user can write a message to another logged in user and have their message be displayed to that user as a list of gifs (see 1). 
 2. The user can choose to search or display Giphy gifs or stickers.
 3. App-wide use of CSS transition effects/animations.
+
+
+##Webfonts Licensing Info: 
+ * @license
+ * MyFonts Webfont Build ID 3735695, 2019-03-18T18:07:05-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Loew-Heavy by The Northern Block Ltd
+ * URL: https://www.myfonts.com/fonts/northernblock/loew/heavy/
+ * Copyright: Copyright &#x00A9; 2014 by Jonathan Hill. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3735695
+ * 
+ * © 2019 MyFonts Inc

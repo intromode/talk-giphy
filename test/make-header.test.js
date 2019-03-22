@@ -4,7 +4,7 @@ const test = QUnit.test;
 test('make static header area', assert => {
 
     const expected = `
-    <section id=\"static-header\"> <h1>Talk</h1><img src=\"assets/logo.png\" alt=\"talk giphy to me logo\"><h1>Giphy to Me</h1> </section>`;
+    <section id="static-header"> <h1>Talk</h1><img src="assets/logo.png" alt="talk giphy to me logo"><h1>Giphy to Me</h1> </section>`;
 
     const result = makeStaticHeader();
 
@@ -22,8 +22,6 @@ test('make auth profile header area', assert => {
         <p>${user.displayName}</p>
         <button>Sign Out</button>
     </section>`;
-
     const result = makeProfileHeader(user);
-
     assert.htmlEqual(result, expected);
 });

@@ -32,14 +32,14 @@ main {
 
 #list-gif-container {
     width:100%; 
- }
+}
  
  #gif-list {
      display:flex;
      flex-wrap: wrap;
      widows: 100%;
      justify-content: center; 
- }
+}
  #gif-list li{
      display: flex;
      flex-direction: column;
@@ -47,11 +47,11 @@ main {
      list-style: none;
      min-width: 300px;
      background-color: lightgrey;
- }
+}
  
  #gif-list li img {
      align-self: center;
- }
+}
  
  .li-buttons {
      background-color: #fff35c;
@@ -62,21 +62,21 @@ main {
      font-size: 16px;
      font-family: Loew-Heavy;
      text-transform: uppercase;
- }
+}
  
  .li-buttons span:hover {
      color: #e646b6;
      cursor: pointer;
- }
+}
  
  .li-buttons button {
      border: solid;
      font-family: Loew-Heavy;
      text-transform: uppercase;
- }
+}
  
  .li-buttons button:hover {
      background-color: #e646b6;
      color: white;
      cursor: pointer;
- }
+}

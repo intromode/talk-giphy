@@ -19,7 +19,6 @@ window.addEventListener('hashchange', () => {
         fetch(url)
             .then(response => response.json())
             .then(result => {
-                console.log(result);
                 const firstGifInResults = result.data[0];
                 firstGifInResults['order'] = i;
                 responseArray.push(firstGifInResults);

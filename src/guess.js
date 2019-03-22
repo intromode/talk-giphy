@@ -31,8 +31,7 @@ generateGifButton.addEventListener('click', () => {
                 originalData = result.data;
                 loadGifs(originalData.slice(0, 1));
             });    
-});
-        
+});    
         
 guessForm.addEventListener('submit', event => {
     event.preventDefault();

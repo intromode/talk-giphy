@@ -8,14 +8,11 @@ function handleGuesses(originalData, currentGuess) {
     }
     else {
         const slicedData = originalData.slice(0, (currentGuess + 1));
-        console.log(slicedData);
         return slicedData;
-
     }
 }
 
 test('create slices untill guess limit', assert => {
-    //Arrange
     const originalData = [
         { url1: 'url1' },
         { url2: 'url2' },
@@ -30,8 +27,6 @@ test('create slices untill guess limit', assert => {
         { url3: 'url3' },
         { url4: 'url4' }
     ];
-    //Act
     const result = handleGuesses(originalData, currentGuess);
-    //Assert
     assert.deepEqual(result, expected);
 });

@@ -10,6 +10,5 @@ export default function updateQuery() {
         const currentQuery = window.location.hash.slice(1);
         const newQuery = writeToQuery(currentQuery, message);
         window.location.hash = newQuery;
-        // callback(message);
     });
 }

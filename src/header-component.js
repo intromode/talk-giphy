@@ -69,7 +69,6 @@ export default function loadHeader(options) {
         }
     });
 
-    //append headernav to headernav container
     const headerNav = makeHeaderNav();
     headerNavNode.appendChild(headerNav);
 }

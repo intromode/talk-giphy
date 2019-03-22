@@ -93,8 +93,6 @@ export default function loadGifs(gifs, options){
                         favoriteGif.classList.add('fave');
                     }
                 });
-
-        
             });
         displayGifs.appendChild(gifDisplay);
     });

@@ -6,9 +6,7 @@ footer {
     padding: 10px 25px;
     font-family: Loew-Heavy;
     border-top: 3px solid white;
-
 }
-
 
 #footer-container div {
     width: 100%;
@@ -29,7 +27,6 @@ footer {
 #footer-container section a:hover {
     color: #fff35c;
 }
-
 
 #footer-credits {
     display: flex;

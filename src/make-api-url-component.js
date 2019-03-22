@@ -5,6 +5,5 @@ export default function makeApiURL(messageSingleTerm) {
     const url = new URL(BASE_URL);
     url.searchParams.set('api_key', API_KEY);
     url.searchParams.set('q', messageSingleTerm);
-    console.log('function url', url.toString());
     return url.toString();
 }

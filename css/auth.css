@@ -4,55 +4,53 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+}
 
-  
+#login {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    border-bottom: 1px solid black;;
+}
 
-  #login {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      padding: 10px 20px;
-      width: 100%;
-      height: 70px;
-      background-color: white;
-      border-bottom: 1px solid black;;
-  }
-
-  #login p {
+#login p {
     font-family: Loew-Heavy;
     font-size: 28px;
     text-transform: uppercase;
     background: white;
     color: black;
-  }
+}
 
-  .firebaseui-container.firebaseui-page-provider-sign-in.firebaseui-id-page-provider-sign-in.firebaseui-use-spinner {
-      display: flex;
-      justify-content: flex-start;
-      margin-left: 0px;
-      width: 100%;
-      height: 60px;
-      padding-top: 0px;
-  }
+.firebaseui-container.firebaseui-page-provider-sign-in.firebaseui-id-page-provider-sign-in.firebaseui-use-spinner {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0px;
+    width: 100%;
+    height: 60px;
+    padding-top: 0px;
+}
 
-  .firebaseui-card-content {
-      display: flex;
-      justify-content: flex-start;
-      width: 100%;
-      padding-top: 0px;
-  }
+.firebaseui-card-content {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 0px;
+}
 
-  .firebaseui-idp-list {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 5px;
-  }
+.firebaseui-idp-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
 
-  .firebaseui-list-item {
-      height: 70px;
-      width: 150px;
-      margin-right: 15px;
-  }
+.firebaseui-list-item {
+    height: 70px;
+    width: 150px;
+    margin-right: 15px;
+}
